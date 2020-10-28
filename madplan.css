@@ -1,0 +1,953 @@
+h1 {
+  padding: none;
+  text-align: center;
+  background: none;
+  color: #DB8C66;
+  font-size: 120px;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 40px;
+  }
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: none;
+  color: #DB8C66;
+  font-size: 120px;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 60px;
+  list-style: none;
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  @media screen and (max-width:500px){
+    h1, .h1{
+        font-size: 60px;
+      }   
+    }
+
+
+
+/*nav menu*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #545454;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #cbcbcb;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 35px;
+    margin-right: 10px;
+  }
+  
+  #main {
+    transition: margin left .5s;
+    padding: 20px;
+  }
+  
+
+  .dropdown-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #545454;
+    display: block;
+    transition: 0.3s;
+    font-size: 25px;
+    border: none;
+    font-style: normal;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    }
+
+    .dropdown-container {
+      display: none;
+      padding-left: 8px;
+       }
+
+  .link2 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #545454;
+    display: block;
+    transition: 0.3s;
+    font-size: 25px;
+    border: none;
+    font-style: normal;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/*Nyeste artikler*/
+.container2{
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-auto-rows:50px 400px;
+  grid-gap:15px;
+  grid-auto-flow: dense;
+  padding: 5px;
+  padding-left: 150px;
+  padding-bottom: 50px;
+}
+
+.gallery-item2{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+
+.gallery-item2 .image2{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+.gallery-item2 .image2 img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position:50% 50%;
+  cursor:pointer;
+  transition:.5s ease-in-out;
+  z-index:2;
+}
+
+.emne {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 70px;
+  padding-bottom: 0px;
+  padding-top: 90px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lejlighed{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+}
+
+.asta {
+  font-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+
+.w-1{
+  grid-column: span 1;
+}
+.w-2{
+  grid-column: span 2;
+}
+.w-3{
+  grid-column: span 3;
+}
+.w-4{
+  grid-column: span 4;
+}
+
+.h-1{
+  grid-row: span 1;
+}
+.h-2{
+  grid-row: span 2;
+}
+.h-3{
+  grid-row: span 3;
+}
+
+@media screen and (max-width:500px){
+  .container2{
+      grid-template-columns: repeat(1,1fr);
+      grid-auto-rows:300px 0px;
+      padding-left: 20px; 
+      padding-right: 20px;
+  }
+
+  .emne {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding: 0px
+     }
+  .lejlighed{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: lighter;
+      font-size: 30px;
+      padding: 0px;
+  }
+
+  .w-1,.w-2,.w-3,.w-4 {
+      grid-column:span 1;
+  }
+}
+
+@keyframes move-down{
+
+  0%{
+      top:10%;
+  }
+  50%{
+      top:35%;
+  }
+  100%{
+      top:50%;
+  }
+}
+
+/*Andre artikler*/
+  .container1{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows:200px 400px;
+    grid-gap:25px;
+    grid-auto-flow: dense;
+    padding: 20px;
+  }
+  
+  .gallery-item1{
+    width:100%;
+    height:100%;
+    position:relative;
+  }
+  
+  .gallery-item1 .image1{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+  }
+  
+  .gallery-item1 .image1 img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+    cursor:pointer;
+    transition:.5s ease-in-out;
+    z-index:2;
+  }
+
+ 
+
+  .gallery-item1 .text{
+    opacity:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:rgb(0, 0, 0);
+    font-size:25px;
+    z-index:4;
+    transition: .3s ease-in-out;
+    opacity:1;
+    width:80%;
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(64, 163, 114);;
+    text-decoration: none;
+  }
+
+ .emne2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 5px;
+  font-size: 14px;
+ }
+
+ .tekst3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: lighter;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+  
+  
+  .w-1{
+    grid-column: span 1;
+  }
+
+  .h-1{
+    grid-row: span 1;
+  }
+  
+  @media screen and (max-width:500px){
+    .container1{
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows:200px 200px;
+    }
+
+    .tekst3 {
+      font-size: 0px;  
+       }
+
+    .emne2 {
+      font-size: 0px;
+    }   
+    .w-1,.w-2,.w-3{
+        grid-column:span 1;
+    }
+  }
+  
+  @keyframes move-down{
+  
+    0%{
+        top:10%;
+    }
+    50%{
+        top:35%;
+    }
+    100%{
+        top:50%;
+    }
+  }
+  
+
+  
+/*Footer*/
+footer {
+  display: flex;
+  background-color: #F1F1F1;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.udgives {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(79, 79, 79);
+  font-size: 15px;
+  align-items: center;
+}
+
+.firma {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(99, 99, 99);
+  font-size: 14px; 
+}
+
+/*Madplan side*/
+.dato_mad {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-left: 30px;
+  font-size: 15px;
+  font-weight: lighter;
+  margin: 0px;
+  }
+
+.månedens {
+    margin: 0px;
+    padding: 5px;
+    padding-left: 30px;
+    background: none;
+    color: black;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+.overskrift {
+    padding-bottom: 30px;
+    text-align: center;
+    background: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+.dage {
+    padding: 7px;
+    padding-left: 40px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.underskrift {
+  padding-left: 5px;
+  padding-right: 5px;
+  background: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter; 
+}
+
+.underskrifterne {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.pris {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 40px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*Grid bokse med mad oversigt*/
+.container{
+    display:grid;
+    padding: 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows:100px 400px;
+    grid-gap:50px;
+    grid-auto-flow: dense;
+  }
+
+.gallery-item{
+    width:100%;
+    height:100%;
+    position:relative;
+  }
+  
+.gallery-item .image{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    }
+
+.gallery-item .image img{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    object-position:50% 50%;
+    cursor:pointer;
+    transition:.5s ease-in-out;
+    }
+
+
+
+    .w-1{
+        grid-column: span 1;
+      }
+      .w-2{
+        grid-column: span 2;
+       }
+
+      .h-1{
+        grid-row: span 1;
+      }
+      .h-2{
+        grid-row: span 2;
+      }
+
+      @media screen and (max-width:500px){
+        .container{
+            grid-template-columns: repeat(1,1fr);
+            grid-auto-rows:160px 450px;
+        }
+        .pris {
+          padding: 2px;
+        }
+      }
+      
+      @keyframes move-down{
+      
+        0%{
+            top:10%;
+        }
+        50%{
+            top:35%;
+        }
+        100%{
+            top:50%;
+        }
+      }
+
+
+/*budgetplan - planer*/
+.dato_budget { 
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding-left: 330px;
+font-size: 15px;
+font-weight: lighter;
+margin: 0px;
+padding-top: 20px;
+}
+
+
+.container4{
+  display:grid;
+  padding: 30px;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows:100px 400px;
+  grid-gap:50px;
+  grid-auto-flow: dense;
+  
+}
+
+.gallery-item4{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+
+.gallery-item4 .image4{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.gallery-item6 .image6{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  padding-left: 60px;
+}
+
+.introduktion {
+ padding-left: 90px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ margin: 0px;
+ font-size: 25px;
+}
+
+.introduktion2 {
+  padding-left: 90px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  font-size: 22px;
+  font-weight: lighter;
+  padding-right: 680px;
+ }
+
+.info_budget {
+  padding-left: 60px;
+  padding-bottom: 10px;
+  background: none;
+  color: #000000;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  font-weight: normal;
+  }
+
+.beskrivelse1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background: none;
+    color: #000000;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 30px;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  border: solid #DB8C66;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.download1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: black;
+  border: solid #DB8C66;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  width: 320px;
+}
+
+
+.w-1{
+  grid-column: span 1;
+}
+.w-2{
+  grid-column: span 2;
+}
+
+
+.h-1{
+  grid-row: span 1;
+}
+.h-2{
+  grid-row: span 2;
+}
+.h-3{
+  grid-row: span 3;
+}
+
+
+@media screen and (max-width:500px){
+  .container4{
+      grid-template-columns: repeat(1,1fr);
+      grid-auto-rows:250px 320px;
+      padding: 0px;  
+  }
+
+  .w-1,.w-2 {
+    grid-column:span 1;
+  }
+
+  .dato_budget { 
+    padding-left: 65px;
+    font-size: 15px;
+    margin: 0px;
+    padding-top: 20px;
+  }
+
+  .introduktion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+    margin: 0px;
+    font-size: 25px;
+  }
+
+  .info_budget {
+    padding-left: 10px;
+    width: 80%;
+  }
+  .gallery-item4 .image4 {
+   padding-left: 10px;
+  
+  }
+
+  .gallery-item6 .image6{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    padding-left: 10px;
+  }
+  .beskrivelse1 {
+    padding: 10px;
+    width: 80%;
+  }
+  
+}
+
+@keyframes move-down{
+
+  0%{
+      top:10%;
+  }
+  50%{
+      top:35%;
+  }
+  100%{
+      top:50%;
+  }
+}
+
+
+
+
+/*madplaner - om madplanerne*/
+.madplanerne_om {
+  padding-left: 85px;
+  background: none;
+  color: #000000;
+  font-size: 35px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  font-weight: normal;
+}
+
+.om_madplanerne {
+  padding-left: 60px;
+  padding-top: 45px;
+  padding-bottom: 10px;
+  background: none;
+  color: #000000;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px;
+  font-weight: normal;
+}
+
+.beskrivelse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  background: none;
+  color: #000000;
+  font-size: 20px;
+  padding-left: 60px;
+  padding-right: 30px;
+  font-weight: lighter;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container5{
+  display:grid;
+  padding: 30px;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows:100px 400px;
+  grid-gap:50px;
+  grid-auto-flow: dense;
+}
+
+.gallery-item5{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+
+.gallery-item5 .image5{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  }
+
+.gallery-item5 .image5 img{
+  height:100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  object-position:50% 50%;
+  cursor:pointer;
+  transition:.5s ease-in-out;
+  }
+
+  .gallery-item7{
+    width:100%;
+    height:100%;
+    position:relative;
+  }
+  
+  .gallery-item7 .image7{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    }
+  
+  .gallery-item7 .image7 img{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    object-position:50% 50%;
+    cursor:pointer;
+    transition:.5s ease-in-out;
+    }
+
+  .img_mad {
+    height: 100%;
+
+  }
+
+  .w-1{
+      grid-column: span 1;
+    }
+    .w-2{
+      grid-column: span 2;
+     }
+
+    .h-1{
+      grid-row: span 1;
+    }
+    .h-2{
+      grid-row: span 2;
+    }
+
+    @media screen and (max-width:500px){
+      .container5{
+          grid-template-columns: repeat(1,1fr);
+          grid-auto-rows:0px 1200px;
+          padding: 0px;
+          padding-right: 20px;
+      }
+      .madplanerne_om {
+        padding-left: 55px;
+      }
+
+      .gallery-item7{
+        width: 200px;
+        height: 200px;
+        position:relative;
+        padding-left: 80px;
+      }
+    }
+    
+    @keyframes move-down{
+    
+      0%{
+          top:10%;
+      }
+      50%{
+          top:35%;
+      }
+      100%{
+          top:50%;
+      }
+    }
+
+/*boligindretningsside om astas lejlighed*/
+.asta_overskrift {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 45px;
+font-weight: lighter;
+padding-right: 320px;
+padding-left: 320px;
+}
+
+.asta_billede {
+padding-left: 400px;
+}
+
+.dato {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 15px;
+font-weight: lighter;
+}
+
+.indhold_asta{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0px;
+  padding-left: 420px;
+  padding-right: 420px;
+}
+
+.indhold_img {
+  margin: 0px;
+  padding-left: 400px;
+  padding-right: 420px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width:500px){
+  .asta_overskrift { 
+    font-size: 30px;
+    padding: 0px;
+  }
+  .asta_billede {
+    padding-left: 10px;
+    padding-right: 0px;
+    height: 280px;
+  }
+
+  .indhold_asta {
+    padding-left: 30px;
+    padding-right: 20px;
+
+  }
+  .indhold_img {
+    padding-right: 0px;
+    padding-left: 60px;
+    height: 320px;
+    
+  }
+}
+
+@keyframes move-down{
+
+  0%{
+      top:10%;
+  }
+  50%{
+      top:35%;
+  }
+  100%{
+      top:50%;
+  }
+}
+
+/*Under udvikling side*/
+.under_udvikling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

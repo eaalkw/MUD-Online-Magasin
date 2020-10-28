@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/madplan.css">
+    <title>Asta's lejlighed</title>
+</head>
+<body>
+
+<!--Nav menu-->
+<hr>
+        
+<div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         
+    <button class="dropdown-btn">Madplaner
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="madplan.html">Månedens madplan</a>
+       <a href="under_programering.html">Tidligere madplaner</a>
+       <a href="under_programering.html">Vegetar madplaner</a>
+       <a href="madplan_om.html">Om madplanerne</a>
+    </section>
+
+    <button class="dropdown-btn">Boligindretning
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="astas_lejlighed.html">Hjem hos studerende</a>
+       <a href="under_programering.html">Genbrugsbutikker</a>
+       <a href="under_programering.html">Loppemarkeder</a>
+       <a href="under_programering.html">DIY</a>
+    </section>
+            
+    <button class="dropdown-btn">Rejser
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="under_programering.html">Rejser i Danmark</a>
+       <a href="under_programering.html">Rejser i Europa</a>
+       <a href="under_programering.html">Rejser uden for Europa</a>
+    </section>
+
+    <button class="dropdown-btn">Økonomi
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="budgetplan.html">Budget planer</a>
+       <a href="under_programering.html">Forsikring</a>
+       <a href="under_programering.html">Tips fra studerende</a>
+    </section>
+       
+    <button class="dropdown-btn">Studierabat
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="under_programering.html">I tøjbutikker</a>
+       <a href="under_programering.html">På restauranter</a>
+       <a href="under_programering.html">På Caféer</a>
+       <a href="under_programering.html">Andre steder</a>
+    </section>
+
+    <button class="dropdown-btn">Begivenheder
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="under_programering.html">Kultur</a>
+       <a href="under_programering.html">Musik</a>
+       <a href="under_programering.html">Gastronomi</a>
+       <a href="under_programering.html">Andet</a>
+    </section>
+
+    <button class="dropdown-btn">Om magasinet 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="under_programering.html">Om os</a>
+       <a href="under_programering.html">Kontakt</a>
+    </section>
+</div>
+<hr>
+        
+<!--Script skal flyttes over i andet dokument-->
+          <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+              } else {
+              dropdownContent.style.display = "block";
+              }
+              });
+            }
+            </script>
+
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+
+<!--Overskriften-->
+<li> <a href="index.html" class="h1" >S.U. LIVING</a></li>
+  
+<!--artikel indhold-->
+<h2 class="asta_overskrift">Efterlign Asta og hendes roomies billige boligtrends fra deres hyggelige og retro lejlighed på Aarhus Ø</h2>
+<p class="dato">Af Louise Klint Wolf - 31 oktober 2020</p>
+<img class="asta_billede" src="img/første_artikel.png" height="500px" alt="indretningsbillede fra Asta's lejlighed">
+
+<section>
+<p class="indhold_asta">Asta og hendes roomies bor på Aarhus Ø i en femværelses lejlighed.</p>
+<br>
+<p class="indhold_asta">De er alle studerende og har derfor ikke en stor indkomst. Pigerne ville gerne spare nogen penge på indretning til deres lejlighed, og derfor er størstedelen af deres møbler enten fra genbrug, arvet, fundet på et outlet, fra storskrald eller hjemmelavet.</p>
+<img class="indhold_img" src="img/altan.JPG" height="820px" alt="Asta's altan med møbler fra storskrald">
+<p class="indhold_asta">"Storskrald er blevet et kæmpe hit i Aarhus, og det er også noget, som vi har været meget taknemlige for. Størstedlen af vores møbler på altanen er fra storskrald. </p>
+<p class="indhold_asta">Vi har fundet pallerne, kassen med hjul og nogen farvede klap-sammen-stole. Alt dette har vi fået helt gratis og det udgør størstedlen af møblerne på vores altan.</p>
+<p class="indhold_asta">Pallerne har vi lavet til to bænke, og kassen på hjul har vi pyntet med tegninger og citater"</p>
+<img class="indhold_img" src="img/spisestue.JPG" height="820px" alt="Et billede af Asta's spisestue, med møbler fra genbrug">
+<p class="indhold_asta">"Vores spisestue er indrettet med et spisebord, som min veninde har arvet fra hendes forældre. Derudover har vi fundet vores teaktræsstole i genbrug til 120kr stykket. Lamperne er også fundet i genbrug til samlet 200kr.</p>
+<p class="indhold_asta">Vi kan godt lide at indrette med en masse planter, og dem køber vi ofte i Billig Blomst, hvor man kan finde dem til en god pris."</p>
+<img class="indhold_img" src="img/genbrugsstol.JPG" height="820px" alt="">
+<p class="indhold_asta">"Vi elsker at indrette vores lejlighed med nogen sjove og finurlige plakater. Nogen af vores plakater er købt fra ny hos Plakaten Aarhus og andre er fundet på DBA.</p>
+<p class="indhold_asta">Egetræsstolen har jeg arvet fra min morfar, da han gik bort. Kasserne og de mørke krukker har vi fundet på genrbug."</p>
+<img class="indhold_img" src="img/hayreol.JPG" height="820px" alt="">
+<p class="indhold_asta">"Mit værelse er indrettet med både nye og gamle ting. Jeg kan godt lide at skabe en afslappende og hyggelig stemning på mit værelse, men samtidig skal det også være praktisk.</p>
+<p class="indhold_asta">Reolen og den røde lampe er fra et outlet i Horsens, der hedder Hay Flea Market. Her har de mange andensorteringsvarer fra Hay, som de sælger meget billigere.</p>
+<p class="indhold_asta">Ølkassen fra Carlsberg er fundet i en genbrugsbutik."</p>
+<img class="indhold_img" src="img/skrivebord.JPG" height="820px" alt="">
+<p class="indhold_asta">"Mit skrivebord er fra Ikea og opslagstavlen er hjemmelavet af noget gammelt stof, som jeg fandt i en genbrugsbutik. Den røde skrivebordstol er fundet på DBA."</p>
+<br><br>
+<p class="indhold_asta">"Vi er tit forbi Reuse i Aarhus, som er en genbrugsstation, hvor man kan hente og aflevere brugte ting. Alt dernede er gratis. Derfor er der typisk også mange mennesker. Men de har masser af spændende sager"</p>
+<br><br>
+<p class="indhold_asta">"Derudover kan vi også godt lide at pynte vores lejlighed med en buket friske blomster. Man kan altid finde nogen billige og pæne buketer på torvesalget på Ingerslevs Boulevard markedet, som finder sted hver onsdag og lørdag."</p>
+</section>
+
+<br><br><br>
+
+
+
+<!--Footer med oplysninger-->
+<footer>
+    <div> 
+        <p class="udgives">Udgives af:</p>
+        <p class="firma">Louise Klint Wolf, Aarhus C, Danmark</p>
+        <p class="udgives">Kontakt:</p>
+        <p class="firma">Du kan kontakte mig på +45 20 20 01 03 / S.U_Living@gmail.com</p>
+    </div> 
+</footer>
+
+</body>
+</html>

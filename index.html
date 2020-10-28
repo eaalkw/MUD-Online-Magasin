@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/madplan.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>SU LIVING</title>
+</head>
+<body>
+
+<!--Nav menu-->
+<hr>
+        
+<div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         
+    <button class="dropdown-btn">Madplaner
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="madplan.html">Månedens madplan</a>
+       <a href="under_programering.html">Tidligere madplaner</a>
+       <a href="under_programering.html">Vegetar madplaner</a>
+       <a href="madplan_om.html">Om madplanerne</a>
+    </section>
+
+    <button class="dropdown-btn">Boligindretning
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="astas_lejlighed.html">Hjem hos studerende</a>
+       <a href="under_programering.html">Genbrugsbutikker</a>
+       <a href="under_programering.html">Loppemarkeder</a>
+       <a href="under_programering.html">DIY</a>
+    </section>
+            
+    <button class="dropdown-btn">Rejser
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="under_programering.html">Rejser i Danmark</a>
+       <a href="under_programering.html">Rejser i Europa</a>
+       <a href="under_programering.html">Rejser uden for Europa</a>
+    </section>
+
+    <button class="dropdown-btn">Økonomi
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="budgetplan.html">Budget planer</a>
+       <a href="under_programering.html">Forsikring</a>
+       <a href="under_programering.html">Tips fra studerende</a>
+    </section>
+       
+    <button class="dropdown-btn">Studierabat
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="under_programering.html">I tøjbutikker</a>
+       <a href="under_programering.html">På restauranter</a>
+       <a href="under_programering.html">På Caféer</a>
+       <a href="under_programering.html">Andre steder</a>
+    </section>
+
+    <button class="dropdown-btn">Begivenheder
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="under_programering.html">Kultur</a>
+       <a href="under_programering.html">Musik</a>
+       <a href="under_programering.html">Gastronomi</a>
+       <a href="under_programering.html">Andet</a>
+    </section>
+
+    <button class="dropdown-btn">Om magasinet 
+       <i class="fa fa-caret-down"></i>
+    </button>
+    <section class="dropdown-container">
+       <a href="under_programering.html">Om os</a>
+       <a href="under_programering.html">Kontakt</a>
+    </section>
+</div>
+<hr>
+        
+
+<!--Script skal flyttes over i andet dokument-->
+          <script>
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+              } else {
+              dropdownContent.style.display = "block";
+              }
+              });
+            }
+            </script>
+
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
+ 
+       
+<!--Overskriften-->
+<div>
+  <h1>S.U. LIVING</h1>
+</div>
+
+<!--Oversigt over nyeste artikler-->
+<div class="container2">
+    <div class="gallery-container2 w-3 h-2"  style="background-color: rgb(178, 178, 214);">
+        <div class="gallery-item2">
+          <a href="astas_lejlighed.html">
+          <div class="image2">
+          <img src="img/første_artikel.png" alt="Artikel om Asta's billige møblering lejlighed">
+          </div>
+          </a>
+        </div>
+    </div>
+            
+    <div class="gallery-container2 w-3 h-2">
+        <div class="gallery-item2">
+          <a href="astas_lejlighed.html" class="asta">
+          <div class="image2">
+          <p class="emne">Boligindretning</p>
+          <p class="lejlighed">Efterlign Asta og hendes roomies billige boligtrends fra deres hyggelige og retro lejlighed på Aarhus Ø</p>
+          </div>
+          </a>
+        </div>
+    </div>
+</div>
+
+<!--Oversigt over andre artikler-->
+<div class="container1">
+    <div class="gallery-container1" style="background-color: rgb(238, 172, 125);">
+        <div class="gallery-item1">
+            <div class="image1">
+            <img src="img/mad_forside.png" width="330" height="200" alt="">
+            </div>
+            <p class="emne2">Madplaner</p>
+            <p class="tekst3">Vores SU venlige madplaner er til dig, som både søger inspiration til billig aftensmad, men samtidig også til dig som mangler et overblik.</p>
+            <a href="madplan.html" class="text">Find månedens madplan</a>
+        </div>
+    </div>
+            
+    <div class="gallery-container1" style="background-color:rgb(238, 172, 125);">
+        <div class="gallery-item1">
+            <div class="image1">
+            <img src="img/rejser.jpg" alt="billede af Hamborg">
+            </div>
+            <p class="emne2">Rejser</p>
+            <p class="tekst3">Tag en tur til skønne Hamborg i juleferien, uden at hele din SU forsvinder.</p>
+            <a href="under_programering.html" class="text">Find din rejse</a>
+        </div>
+    </div>
+            
+    <div class="gallery-container1" style="background-color: rgb(238, 172, 125);">
+        <div class="gallery-item1">
+            <div class="image1">
+            <img src="img/studierabat.jpeg" alt="billede af bygninger">
+            </div>
+            <p class="emne2">Økonomi</p>
+            <p class="tekst3">Hos S.U Living tilbyder vi eksempler på studievenlige budgetplaner. Find inspiration til din budgetplan eller få et overblik over forskellige muligheder.</p>
+            <a href="budgetplan.html" class="text">Find din budgetplan</a>
+        </div>
+    </div>
+
+    <div class="gallery-container1" style="background-color: rgb(238, 172, 125);">
+        <div class="gallery-item1">
+            <div class="image1">
+            <img src="img/økonomi.jpg" alt="Caféer">
+            </div>
+            <p class="emne2">Studierabet</p>
+            <p class="tekst3">Få et overblik over hvilke butikker, cafeer eller andet, som har studierabat.</p>
+            <a href="under_programering.html" class="text">Find studierabet</a>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br>
+    
+<!--Footer med oplysninger-->
+<footer>
+    <div> 
+        <p class="udgives">Udgives af:</p>
+        <p class="firma">Louise Klint Wolf, Aarhus C, Danmark</p>
+        <p class="udgives">Kontakt:</p>
+        <p class="firma">Du kan kontakte mig på +45 20 20 01 03 / S.U_Living@gmail.com</p>
+    </div> 
+</footer>
+</body>
+</html>
